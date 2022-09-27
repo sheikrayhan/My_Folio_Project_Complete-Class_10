@@ -1,0 +1,304 @@
+/* Common CSS Start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+ }
+ a{
+    text-decoration: none;
+ }
+ ul{
+    list-style-type: none;
+ }
+ .container{
+    width: 1170px;
+    margin: auto;
+ }
+ .row{
+    display: flex;
+    flex-wrap: wrap;
+ }
+.section_info{
+    text-align: center;
+    color: #7e8287;
+}
+.section_info h2{
+    color: #02918c;
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+}
+.section_info p b{
+    font-size: 23px;
+}
+/* Common CSS End */
+
+/* Nav Section CSS Start */
+nav{
+    background-color: #02918b;
+}
+.row{
+    align-items: center;
+}
+.logo{
+    width: 20%;
+}
+.menu{
+    width: 80%;
+}
+nav .menu ul{
+    display: flex;
+    justify-content: flex-end;
+}
+nav .menu ul li a{
+    display: inline-block;
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 26px 25px;
+    transition: .6s;
+}
+nav .menu ul li a:hover{
+    color: #02918b;
+    background-color: #cfc91d;
+    border-radius: 10px;
+}
+/* Nav Section CSS End */
+
+/* Banner Section CSS Start */
+#banner{
+    background-image: url(../img/banner_bg.jpg);
+    height: 729px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+#banner .container{
+    height: 100%;
+}
+#banner .row{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#banner .banner_content h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner .banner_content h1{
+    font-size: 68px;
+    font-weight: 800;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+}
+#banner .banner_content p{
+    font-size: 18px;
+}
+#banner .banner_content img{
+    display: block;
+    margin: 25px auto;
+}
+#banner .banner_content a{
+    display: inline-block;
+    color: #0b1016;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 18px 40px;
+    background-color: #cfc91d;
+    letter-spacing: 5px;
+    transition: .7s;
+}
+#banner .banner_content a:hover{
+    color: #cfc91d;
+    background-color: #02918b;
+    border-radius: 3px;
+}
+/* Banner Section CSS End */
+
+/* About Section CSS Start */
+#about{
+    margin: 98px 0px;
+}
+#about .section_info p{
+    width: 878px;
+    padding: 20px 0px;
+    margin: auto;
+}
+#about .about_item{
+    width: 25%;
+    text-align: center;
+    padding: 36px 40px;
+    border-right: 1px solid  #d9dbdb;
+}
+#about .about_item:last-child{
+    border: none;
+}
+#about .about_item i{
+    color: #01918b;
+    font-size: 25px;
+}
+#about .about_item h4{
+    font-size: 16px;
+    color: #7e8287;
+    font-weight: 800;
+    padding: 29px 0;
+}
+#about .about_item p{
+    font-size: 11px;
+    color: #7e8287;
+}
+/* About Section CSS End */
+
+/* Service Section CSS Start */
+#Service{
+    background-image: url(../img/service_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 75px 0;
+}
+#Service .inner_container{
+    width: 50%;
+}
+#Service .section_info{
+    text-align: left;
+    padding-bottom: 30px;
+}
+#Service .section_info p{
+    padding-top: 40px;
+}
+#Service .service_item{
+    width: 50%;
+    padding: 25px 110px 25px 0;
+}
+#Service .service_item i{
+    color: #01918b;
+    font-size: 25px;
+}
+#Service .service_item h4{
+    font-size: 16px;
+    color:#7e8287;
+    font-weight: 800;
+    padding: 29px 0;
+}
+#service .service_item p{
+    font-size: 11px;
+    color: #7e8287;
+ }
+/* Service Section CSS End */
+
+/* My Work Section CSS Start */
+#work .section_info{
+    padding: 100px 0;
+}
+#work .section_info p{
+    width: 675px;
+    margin: auto;
+    padding-top: 30px;
+}
+#work .work_item{
+    width: 25%;
+    position: relative;
+}
+#work .work_item img{
+    width: 100%;
+    display: block;
+}
+
+#work .work_item .overlay{
+    position: absolute;
+    left: 28px;
+    right: 28px;
+    top: 20px;
+    bottom: 20px;
+    background: rgba(2, 145, 139, .85);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+}
+#work .work_item:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+    border-radius: 10px;
+    color: #cfc91d;
+}
+#work .work_item .overlay h5{
+    font-size: 16px;
+    font-weight: 800;
+    padding: 20px 0;
+}
+/* My Work Section CSS End */
+
+/* Contact Section CSS Start */
+#contact{
+    padding-top: 100px;
+}
+#contact .section_info p{
+    width: 678px;
+    margin: auto;
+    padding: 20px 0;
+}
+#contact .contact_form{
+    background-color:#0a0a0b;
+    padding: 70px 0;
+}
+#contact .contact_form input,
+#contact .contact_form textarea{
+    color: #7e8287;
+    display: block;
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 20px;
+    margin-bottom: 50px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #7e8287;
+}
+#contact .contact_form .input_small{
+    width: 640px;
+}
+#contact .contact_form .input_large{
+    width: 915px;
+}
+#contact .contact_form textarea{
+    resize: none;
+    font-family: 'Open Sans', sans-serif;
+}
+#contact .contact_form button{
+    color: #0b1016;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+    background-color: #cfc91d;
+    border: none;
+    padding: 20px 66px;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .6s;
+}
+#contact .contact_form button:hover{
+    background-color: #01918b;
+    color: #cfc91d;
+}
+/* Contact Section CSS End */
+
+/* Footer CSS Start */
+footer{
+    background-color: black;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #7e8287;
+    padding: 15px;
+    text-align: center;
+}
+/* Footer CSS End */
